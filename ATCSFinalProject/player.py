@@ -8,6 +8,9 @@ class Player:
         self.height = 60
         self.y_vel = 0.75
         self.x_vel = 0.75
+        self.has_key1 = False
+        self.has_key2 = False
+        self.has_key3 = False
     
     def set_cords(self, x, y):
         self.x = x
@@ -24,6 +27,10 @@ class Player:
     
     def move_down(self):
         self.y += self.y_vel
+
+    def has_keys(self):
+        (self.has_key1 and self.has_key2 and self.has_key3) == False
+        return
 
     def draw(self, screen):
         pygame.draw.rect(screen, (255, 0, 0), (self.x, self.y, self.width, self.height))
