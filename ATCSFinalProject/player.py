@@ -6,8 +6,8 @@ class Player:
         self.y = y
         self.width = 40
         self.height = 60
-        self.y_vel = 15
-        self.x_vel = 15
+        self.y_vel = 5
+        self.x_vel = 5
     
     def set_cords(self, x, y):
         self.x = x
@@ -20,10 +20,10 @@ class Player:
         self.x += self.x_vel
 
     def move_up(self):
-        self.x -= self.y_vel
+        self.y -= self.y_vel
     
     def move_down(self):
-        self.x += self.y_vel
+        self.y += self.y_vel
 
     def draw(self, screen):
         pygame.draw.rect(screen, (255, 0, 0), (self.x, self.y, self.width, self.height))
