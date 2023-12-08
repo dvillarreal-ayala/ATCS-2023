@@ -1,5 +1,7 @@
 import pygame
 import sys
+from player import Player
+
 
 pygame.init()
 "The code used to initialize the screen was written by ChatGPT"
