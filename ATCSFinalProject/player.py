@@ -6,8 +6,8 @@ class Player:
         self.y = y
         self.width = 40
         self.height = 60
-        self.y_vel = 5
-        self.x_vel = 5
+        self.y_vel = 0.75
+        self.x_vel = 0.75
     
     def set_cords(self, x, y):
         self.x = x
