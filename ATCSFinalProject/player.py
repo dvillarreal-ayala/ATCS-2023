@@ -11,6 +11,7 @@ class Player:
         self.has_key1 = False
         self.has_key2 = False
         self.has_key3 = False
+        self.player_hitbox = pygame.Rect(self.x, self.y, self.width, self.height)
     
     def set_cords(self, x, y):
         self.x = x

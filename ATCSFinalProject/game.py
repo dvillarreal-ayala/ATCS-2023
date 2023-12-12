@@ -5,11 +5,11 @@ from player import Player
 
 pygame.init()
 "The code used to initialize the screen was written by ChatGPT"
-width, height = 800, 600
-screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Pygame Example")
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("ATCS 2023 Game")
 
-# Set up colors
+# Set up colorsa
 black = (0, 0, 0)
 white = (255, 255, 255)
 
@@ -37,6 +37,6 @@ while True:
 
     player1.draw(screen)
     
-    pygame.draw.rect(screen, white, (width // 2 - 50, height // 2 - 50, 100, 100))
+    pygame.draw.rect(screen, white, (WIDTH // 2 - 50, HEIGHT // 2 - 50, 100, 100))
 
     pygame.display.update()
